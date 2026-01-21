@@ -19,7 +19,7 @@
     </parent>
 
     <properties>
-        <java.version>21</java.version>  <!-- Modern Java -->
+        <java.version>17</java.version>  <!-- Modern Java -->
     </properties>
 
     <dependencies>
