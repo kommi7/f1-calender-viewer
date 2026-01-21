@@ -79,7 +79,7 @@ function filterRaces() {
 }
 
 // Bonus: Fetch from API (uncomment when ready)
-fetch('https://ergast.com/api/f1/2026.json')
+fetch('/api/races')
      .then(response => response.json())
      .then(data => {
          // Parse MRData.RaceTable.Races into races array format
