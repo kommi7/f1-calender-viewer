@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e10600; /* F1 red */
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#races-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.race-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.race-card h2 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.race-card p {
+    margin: 5px 0;
+}
+
+.race-card.upcoming {
+    border-left: 5px solid green;
+}
+
+.race-card.past {
+    border-left: 5px solid gray;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    font-style: italic;
+}
