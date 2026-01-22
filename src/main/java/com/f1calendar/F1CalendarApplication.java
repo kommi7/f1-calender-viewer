@@ -1,4 +1,4 @@
-package com.f1calender;
+package com.f1calendar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
