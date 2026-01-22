@@ -1,4 +1,4 @@
-package com.f1calender.controller;
+package com.f1calendar.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
