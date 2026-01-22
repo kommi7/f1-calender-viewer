@@ -66,7 +66,8 @@ Prerequisites
 Installation and Setup
 ----------------------
 
-1.  git clone https://github.com/kommi7/f1-calendar-viewer.gitcd f1-calendar-viewer
+1.  git clone https://github.com/kommi7/f1-calendar-viewer.git
+    cd f1-calendar-viewer
     
 2.  Install dependencies:
     
@@ -82,25 +83,28 @@ Installation and Setup
 Building the Application
 ------------------------
 
-*   mvn clean packageThis generates target/f1-calendar-viewer.jar or .war (based on pom.xml packaging).
+*   mvn clean package
+    This generates target/f1-calendar-viewer.jar or .war (based on pom.xml packaging).
     
 *   Troubleshooting Build Errors:
     
     *   If you encounter "\[ERROR\] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile ... release version 21 not supported":
         
-        *   Ensure your JDK is 21+ (java -version).
+        *   Ensure your JDK is 17+ (java -version).
             
         *   Update the compiler plugin in pom.xml to version 3.14.0+.
             
-        *   Use 21 in plugin configuration.
+        *   Use 17 in plugin configuration.
             
 
 Running Locally
 ---------------
 
-1.  mvn spring-boot:runAccess at http://localhost:8080.
+1.  mvn spring-boot:run
+    Access at http://localhost:8080.
     
-2.  docker build -t f1-calendar-viewer .docker run -p 8080:8080 f1-calendar-viewer
+2.  docker build -t f1-calendar-viewer .
+    docker run -p 8080:8080 f1-calendar-viewer
     
 3.  Test the app: Open in a browser and interact with the calendar viewer.
     
@@ -110,14 +114,19 @@ Deployment
 
 ### Using Terraform
 
-1.  cd terraformterraform initterraform planterraform applyThis provisions infrastructure (e.g., S3 bucket or EC2 for hosting).
+1.  cd terraform
+    terraform init
+    terraform plan
+    terraform apply
+    This provisions infrastructure (e.g., S3 bucket or EC2 for hosting).
     
 
 ### Using Kubernetes
 
-1.  kubectl apply -f deployment-service.ymlEnsure your Kubernetes cluster is set up.
+1.  kubectl apply -f deployment-service.yml
+    Ensure your Kubernetes cluster is set up.
     
 
 ### CI/CD with Jenkins
 
-*   Use the pipeline defined in jenkins\_pipeline.txt to automate builds and deployments. Install in Jenkins as a new pipeline job.
+*   Use the pipeline defined in jenkins_pipeline.txt to automate builds and deployments. Install in Jenkins as a new pipeline job.
