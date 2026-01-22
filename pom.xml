@@ -6,7 +6,7 @@
     <groupId>com.example</groupId>
     <artifactId>f1-calendar-viewer</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>  <!-- Still WAR for Tomcat compatibility -->
+    <packaging>jar</packaging>  <!-- Still WAR for Tomcat compatibility -->
 
     <name>F1 Race Calendar Viewer</name>
     <description>Java-based F1 web app</description>
